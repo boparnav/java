@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title> Javascript</title>
+<script>
+
+
+
+
+
+
+
+//var FirstNumber=prompt(" Enter FirstNumber");
+//var SecondNumber =prompt(" Enter SecondNumber");
+
+//var result=parseInt(FirstNumber) +parseInt(SecondNumber);
+
+ //alert(result);
+ 
+ 
+ function ADD(){
+ console.log("Inside function ADD");
+ var FirstNumber = document.getElementById("FirstNumber").value;
+ var SecondNumber = document.getElementById("SecondNumber").value;
+  
+ //document.getElementById("result").innerHTML=parseInt(FirstNumber)+parseInt(SecondNumber);
+  alert(parseInt(FirstNumber)+parseInt(SecondNumber));
+  }
+
+function Multiply(){
+ var FirstNumber = document.getElementById("FirstNumber").value;
+ var SecondNumber = document.getElementById("SecondNumber").value;
+  
+  document.getElementById("result").innerHTML=parseInt(FirstNumber)*parseInt(SecondNumber);
+  //alert(parseInt(FirstNumber)*parseInt(SecondNumber);
+  }
+
+
+</script>
+</head>
+<body>
+
+<input type="text" id="FirstNumber" placeholder="Enter firstnumber here"><br><br>
+<input type="text" id="SecondNumber" placeholder="Enter secondnumber here"><br><br>
+<button onclick="ADD()">ADD</button><br><br>
+<button onclick="Multiply()">Multiply</button><br><br>
+<h1 id="result"><input type="text" id="Result" placeholder="Enter resul here"></h1>
+
+
+</body>
+</html> 
